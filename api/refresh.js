@@ -75,7 +75,7 @@ export default async function handler(req, res) {
     };
 
     await put(BLOB_KEY, JSON.stringify(payload), {
-      access: 'public',
+      access: 'private',
       addRandomSuffix: false,
       allowOverwrite: true,
       contentType: 'application/json',
